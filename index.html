@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Men's Luxury Fashion</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: #e3c26f; /* gold */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #000;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #e3c26f;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #e3c26f;
+            margin-right: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        section {
+            padding: 70px 50px;
+        }
+
+        h1, h2 {
+            color: #e3c26f;
+            letter-spacing: 2px;
+        }
+
+        /* GALLERY */
+        .gallery img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            margin: 12px;
+            border: 2px solid #e3c26f;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(227,194,111,0.4);
+            transition: transform .3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* FORM */
+        form label {
+            font-size: 18px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            background: #111;
+            border: 1px solid #e3c26f;
+            border-radius: 6px;
+            color: white;
+        }
+
+        form input[type="submit"] {
+            background: #e3c26f;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        form input[type="submit"]:hover {
+            background: white;
+        }
+
+        footer {
+            background: #000;
+            color: #e3c26f;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            border-top: 1px solid #e3c26f;
+        }
+
+        /* SMOOTH SCROLLING */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h1>Men's Luxury Fashion</h1>
+    <p>Welcome to the world of luxury menswear — where craftsmanship meets sophistication. From tailored suits to elegant accessories, this guide showcases the essence of high-end men’s fashion.</p>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Luxury Suit Collection</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Luxury Suit 1">
+        <img src="suit2.jpg" alt="Luxury Suit 2">
+        <img src="suit3.jpg" alt="Luxury Suit 3">
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section id="videos">
+    <h2>Luxury Menswear Styling Video</h2>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/watch?v=75nNqaNOYrs"
+        title="Luxury Fashion Video"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Request Personal Styling</h2>
+    <form>
+        <label>Name:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Your Message:</label>
+        <textarea rows="5" required></textarea>
+
+        <input type="submit" value="Send Request">
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Men's Luxury Fashion Guide. Elegance Meets Excellence.</p>
+</footer>
+
+</body>
+</html>
